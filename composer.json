@@ -1,8 +1,9 @@
-
 {
 
     
     "require": {
-        "fzaninotto/faker": "^1.5"
+        "fzaninotto/faker": "^1.5",
+        "altorouter/altorouter": "^2.0",
+        "filp/whoops": "^2.14"
     }
 }

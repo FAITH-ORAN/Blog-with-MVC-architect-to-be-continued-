@@ -5,7 +5,7 @@
 //il faut toujour mettre l'autoload daans le fichier ../../vendor/autoload.php
 //ensuite on copie la bibliothèque on l'installe via composer 
 //un require se créé automatiquement dans composer. json
-//pour téléchargé les fichiers de la bibliothèque faut taper en ligne de commande composer dumpautoload
+//pour téléchargé les fichiers de la bibliothèque faut taper en ligne de commande composer dump autoload
 //
 require dirname(__DIR__) . "../../vendor/autoload.php";//autoloader composer
 
