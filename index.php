@@ -49,14 +49,21 @@ if(is_array($match)){
     if( is_callable( $match['target'] ) ) {
         call_user_func_array( $match['target'], $match['params'] ); 
     } else {
+        ob_start();
         $params = $match['params'];
         //match target with view
         include "app/views/{$match['target']}.view.php";
+        $pageContent = ob_get_clean();
         
     }
 }else{
     include "app/views/404.view.php";
+    $pageContent = ob_get_clean();
 }
+
+//select layout
+
+include "app/views/layouts/default.layout.view.php";
 
 
 ?>
